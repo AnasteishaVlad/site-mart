@@ -33,8 +33,6 @@ html {
 .container {
   max-width: 1110px;
   margin: 0 auto;
-  padding-left: 245px;
-  padding-right: 245px;
 }
 
 /* list for cleaning margin padding */
