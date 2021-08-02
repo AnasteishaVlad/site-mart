@@ -1,0 +1,314 @@
+/* У ссылки должны быть стили для состояния покоя, при наведения курсора :hover, в момент нажатия :focus, активного :active и иногда состояния, когда пользователь уже посещал эту страницу :visited. */
+/*Open Sans Light 300
+  Open Sans Regular 400
+  Open Sans Semi-bold 600
+  Open Sans Bold 700 */
+/* Roboto Light 300
+  Roboto Black 900*/
+:root {
+  --font-family1: "Open Sans", "Arial", sans-serif;
+  --font-family2: "Roboto", "Arial", sans-serif;
+  --color-light-blue: rgb(26, 188, 156);
+  --color-logo: rgb(149, 149, 149);
+  --color-black: #0f0101;
+  --color-futured-products: rgb(81, 81, 81);
+  --color-background-img: rgb(233, 240, 253);
+  --color-bacground-gray: rgb(50, 50, 50);
+  --color-bacground-light-gray: rgb(149, 149, 149);
+  --color-wite: rgb(255, 255, 255);
+  --color-latest-news: rgb(85, 82, 82);
+  --color-button: rgb(78, 198, 171);
+}
+
+/* HTML */
+html {
+  box-sizing: border-box;
+}
+*,
+*::before *::after {
+  box-sizing: inherit;
+}
+
+/* Container */
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding-left: 245px;
+  padding-right: 245px;
+}
+
+/* list for cleaning margin padding */
+.list {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Body */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+/* Container line */
+.container-line {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 164px;
+  height: 7px;
+  background-color: var(--color-light-blue);
+}
+
+/* Menu */
+.menu {
+  display: flex;
+  text-align: center;
+  padding-top: 41px;
+  padding-bottom: 101px;
+}
+
+/* Logo */
+.logo-h1 {
+  font-size: 30px;
+  font-family: var(--font-family2);
+  font-weight: 300;
+  line-height: 1;
+  color: var(--color-logo);
+}
+
+.logo-h1:first-letter {
+  font-size: 30px;
+  font-family: var(--font-family2);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--color-light-blue);
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+/* Main menu */
+.menu-navigation {
+  list-style-type: none;
+}
+
+.menu-navigation {
+  display: flex;
+  margin-left: auto;
+}
+
+.main-menu-text-first {
+  font-size: 14px;
+  font-family: var(--font-family1);
+  font-weight: bold;
+  line-height: 1;
+  color: var(--color-light-blue);
+}
+
+.main-menu-text {
+  font-size: 14px;
+  font-family: var(--font-family1);
+  font-weight: bold;
+  line-height: 1;
+  color: var(--color-black);
+}
+
+.main-menu-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.main-menu-link {
+  display: inline-block;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.main-menu-link:hover {
+  background-color: var(--color-logo);
+}
+
+.main-menu-link:focus {
+  color: var(--color-latest-news);
+}
+
+/* FEATURED PRODUCTS */
+.featured-products-section {
+  width: 1110px;
+}
+
+.featured-products-title {
+  font-size: 48px;
+  font-family: var(--font-family2);
+  font-weight: 900;
+  line-height: 1, 5;
+  color: var(--color-futured-products);
+}
+
+.featured-products-title {
+  margin-bottom: 31px;
+  text-align: center;
+}
+
+.featured-products-list {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  margin-top: 92px;
+}
+
+.featured-products-list-li {
+  width: 255px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.featured-products-list-li:nth-child(4n) {
+  margin-right: 0px;
+}
+
+.featured-products-list-li:nth-last-child(-n + 4) {
+  margin-bottom: 105px;
+}
+
+.featured-products-img {
+  background-color: var(--color-background-img);
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.featured-products-p {
+  display: flex;
+}
+
+.featured-products-text {
+  font-size: 18px;
+  font-family: var(--font-family2);
+  font-weight: 900;
+  line-height: 1, 8;
+  color: var(--color-wite);
+  background-color: var(--color-bacground-gray);
+}
+
+.featured-products-text {
+  width: 201px;
+  padding-left: 13px;
+}
+
+.featured-products-price {
+  font-size: 18px;
+  font-family: var(--font-family2);
+  font-weight: 900;
+  line-height: 1, 8;
+  color: var(--color-wite);
+  background-color: var(--color-bacground-light-gray);
+  width: 54px;
+  text-align: center;
+}
+
+/* Latest news */
+.section-latest-news {
+  width: 1110px;
+  padding-bottom: 80px;
+}
+
+.latest-news-title {
+  font-size: 48px;
+  font-family: var(--font-family2);
+  font-weight: 900;
+  line-height: 1, 5;
+  color: var(--color-latest-news);
+}
+
+.latest-news-title {
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.latest-news-list {
+  display: flex;
+  list-style-type: none;
+  margin-top: 75px;
+}
+
+.latest-news-li {
+  margin-right: 30px;
+}
+
+.latest-news-li:nth-child(3n) {
+  margin-right: 0px;
+}
+
+.latest-news-img {
+  display: block;
+  width: 350px;
+}
+
+.latest-news-img {
+  margin-bottom: 14px;
+}
+
+.latest-news-article-title {
+  font-size: 18px;
+  font-family: var(--font-family1);
+  font-weight: 600;
+  line-height: 1, 5;
+  color: var(--color-latest-news);
+}
+
+.latest-news-article-title {
+  margin-bottom: 11px;
+}
+
+.conteiner-line-article {
+  display: flex;
+  width: 136px;
+  height: 3px;
+  background-color: var(--color-light-blue);
+}
+
+.conteiner-line-article {
+  margin-bottom: 29px;
+}
+
+.latest-news-article {
+  font-size: 14px;
+  font-family: var(--font-family1);
+  font-weight: 400;
+  line-height: 1, 8;
+  color: var(--color-latest-news);
+}
+
+.latest-news-article {
+  margin-bottom: 16px;
+}
+
+/* Button */
+.button-read-more {
+  display: block;
+  border: none;
+  width: 160px;
+  text-align: center;
+  background-color: var(--color-button);
+  border-radius: 3px;
+  padding: 18px;
+}
+
+.link-button:hover {
+  background-color: var(--color-bacground-gray);
+  border-radius: 3px;
+}
+.link-button:focus {
+  color: var(--color-latest-news);
+}
+
+.link-button {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: var(--font-family1);
+  font-weight: 300;
+  color: var(--color-wite);
+  cursor: pointer;
+}
